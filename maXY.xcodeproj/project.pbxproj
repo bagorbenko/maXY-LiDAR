@@ -13,6 +13,11 @@
 		84A1EA0529DAEB5A00888C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A1EA0329DAEB5A00888C39 /* Main.storyboard */; };
 		84A1EA0729DAEB5B00888C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A1EA0629DAEB5B00888C39 /* Assets.xcassets */; };
 		84A1EA0A29DAEB5B00888C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A1EA0829DAEB5B00888C39 /* LaunchScreen.storyboard */; };
+		84A1EA1129DAEBE000888C39 /* ObjectScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1EA1029DAEBE000888C39 /* ObjectScanner.swift */; };
+		84A1EA1329DAEBFD00888C39 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1EA1229DAEBFD00888C39 /* Extension.swift */; };
+		84A1EA1529DB0DC500888C39 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1EA1429DB0DC500888C39 /* Scene.swift */; };
+		84A1EA1929DB240600888C39 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A1EA1729DB238800888C39 /* ModelIO.framework */; };
+		84A1EA1F29DCB5AB00888C39 /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A1EA1E29DCB5AB00888C39 /* RealityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		84A1EA0429DAEB5A00888C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A1EA0629DAEB5B00888C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A1EA0929DAEB5B00888C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A1EA1029DAEBE000888C39 /* ObjectScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanner.swift; sourceTree = "<group>"; };
+		84A1EA1229DAEBFD00888C39 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		84A1EA1429DB0DC500888C39 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		84A1EA1729DB238800888C39 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		84A1EA1E29DCB5AB00888C39 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A1EA1F29DCB5AB00888C39 /* RealityKit.framework in Frameworks */,
+				84A1EA1929DB240600888C39 /* ModelIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,7 @@
 			children = (
 				84A1E9FC29DAEB5A00888C39 /* maXY */,
 				84A1E9FB29DAEB5A00888C39 /* Products */,
+				84A1EA1629DB238800888C39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,12 +70,24 @@
 			children = (
 				84A1E9FD29DAEB5A00888C39 /* AppDelegate.swift */,
 				84A1E9FF29DAEB5A00888C39 /* ViewController.swift */,
+				84A1EA1029DAEBE000888C39 /* ObjectScanner.swift */,
+				84A1EA1229DAEBFD00888C39 /* Extension.swift */,
+				84A1EA1429DB0DC500888C39 /* Scene.swift */,
 				84A1EA0129DAEB5A00888C39 /* Experience.rcproject */,
 				84A1EA0329DAEB5A00888C39 /* Main.storyboard */,
 				84A1EA0629DAEB5B00888C39 /* Assets.xcassets */,
 				84A1EA0829DAEB5B00888C39 /* LaunchScreen.storyboard */,
 			);
 			path = maXY;
+			sourceTree = "<group>";
+		};
+		84A1EA1629DB238800888C39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A1EA1E29DCB5AB00888C39 /* RealityKit.framework */,
+				84A1EA1729DB238800888C39 /* ModelIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A1EA1329DAEBFD00888C39 /* Extension.swift in Sources */,
 				84A1EA0029DAEB5A00888C39 /* ViewController.swift in Sources */,
+				84A1EA1529DB0DC500888C39 /* Scene.swift in Sources */,
 				84A1E9FE29DAEB5A00888C39 /* AppDelegate.swift in Sources */,
 				84A1EA0229DAEB5A00888C39 /* Experience.rcproject in Sources */,
+				84A1EA1129DAEBE000888C39 /* ObjectScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FA636RLHJ6;
@@ -302,6 +332,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it-lime.maXY";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FA636RLHJ6;
@@ -332,6 +364,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "it-lime.maXY";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
