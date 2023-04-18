@@ -31,4 +31,3 @@ extension ARMeshGeometry {
                        submeshes: [submesh]);
     }
 }
-
